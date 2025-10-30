@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Menu</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <header>
+    <h2>Menu</h2>
+    <button id="checkout">Checkout</button>
+  </header>
+
+  <main class="grid">
+    <section id="menu-list" class="cards"></section>
+    <aside class="cart">
+      <h3>Your Cart</h3>
+      <ul id="cart-items"></ul>
+      <div class="total">
+        <span>Total:</span>
+        <strong id="cart-total">US$0.00</strong>
+      </div>
+      <button id="checkout-bottom" class="primary full">Pay with Stripe</button>
+    </aside>
+  </main>
+
+  <script src="{{ url_for('static', filename='menu.js') }}"></script>
+</body>
+</html>

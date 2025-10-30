@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>ByteBites - Food Ordering</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <style>
+    body {
+      background-color: #0b0d12;
+      color: #eaeef5;
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      background: radial-gradient(circle at 50% 40%, #141a24 0%, #0b0d12 100%);
+    }
+    .hero h1 {
+      font-size: 3rem;
+      color: #4ae86f;
+      margin-bottom: 0.5rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      color: #b5b9c1;
+      margin-bottom: 1.5rem;
+    }
+    .hero .location {
+      font-size: 1rem;
+      color: #9ca3af;
+      margin-bottom: 2rem;
+    }
+    .hero button {
+      background-color: #4ae86f;
+      border: none;
+      padding: 0.8rem 1.6rem;
+      border-radius: 10px;
+      font-weight: 600;
+      font-size: 1.1rem;
+      color: #000;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .hero button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 0 12px #4ae86f;
+    }
+  </style>
+</head>
+<body>
+  <div class="hero">
+    <h1>Welcome to ByteBites 🍽️</h1>
+    <p>Your favorite meals, freshly made and just a click away.</p>
+    <div class="location">📍 Serving: Downtown Oklahoma City, OK</div>
+    <button id="find-food">View Menu</button>
+  </div>
+  <script src="{{ url_for('static', filename='home.js') }}"></script>
+</body>
+</html>

@@ -4,9 +4,9 @@ from botocore.exceptions import ClientError
 
 REGION = "us-east-1"                    
 KEY_NAME = "new-key-2"            
-GITHUB_REPO = " https://github.com/saiswetha421-lgtm/food-ordering-app.git"
+GITHUB_REPO = " https://github.com/bondadaswetha/food_ordering_app.git"
 SECURITY_GROUP_NAME = "flask-sg"         
-INSTANCE_TYPE = "t3.micro"                
+INSTANCE_TYPE = "t3.micro"               
 AMI_ID = "ami-0c7217cdde317cfec"         
 
 

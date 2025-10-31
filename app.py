@@ -67,5 +67,5 @@ def create_checkout_session():
     return jsonify({"checkout_url": session.url})
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000)
+    app.run(host="0.0.0.0", port=8002)
 
